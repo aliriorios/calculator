@@ -1,0 +1,146 @@
+@charset "UTF8";
+
+/* Variáveis de cor */
+:root {
+    --01: #DFDEDE;
+    --02: #BDBEC0;
+    --03: #060709;
+    --04: #25252b;
+    --05: #5D5F63;
+
+    --light-red: #ff8181;
+    --light-green: #81ffd9;
+}
+
+/* removendo espaçamento e margem padrão de TODOS OS ELEMENTOS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BACKGROUND ------------------------------------------ */
+div.back_content {
+    background: var(--01);
+    height: 100vh;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CALCULATOR ------------------------------------------ */
+div.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 400px;
+
+    background-color: var(--03);
+
+    border-radius: 15px;
+}
+
+header#head {
+    color: var(--01);
+    font-size: 50%;
+    text-align: left;
+
+    background: var(--04);
+    border-radius: 15px;
+
+    padding: 10px;
+}
+
+/* TABLE BACKGROUND */
+div#table_bg {
+    background-color: var(--04);
+    border-radius: 15px;
+
+    position: relative;
+    top: 50px;
+}
+
+/* TABLE */
+table#tbl_cal {
+    margin: 15px;
+}
+
+/* BUTTONS */
+button.btn {
+    background-color: rgb(31, 31, 31);
+    border: none;
+    border-radius: 15px;
+
+    width: 50px;
+    height: 50px;
+
+    font-size: 17px;
+    color: var(--01);
+
+    cursor: pointer; /* alterando o cursor */
+
+    margin: 2px;
+}
+
+button.btn_green {
+    background-color: rgb(31, 31, 31);
+    border: none;
+    border-radius: 15px;
+
+    width: 50px;
+    height: 50px;
+
+    font-size: 17px;
+    color: var(--light-green);
+
+    cursor: pointer; /* alterando o cursor */
+
+    margin: 2px;
+}
+
+button.btn_red {
+    background-color: rgb(31, 31, 31);
+    border: none;
+    border-radius: 15px;
+
+    width: 50px;
+    height: 50px;
+
+    font-size: 17px;
+    color: var(--light-red);
+
+    cursor: pointer; /* alterando o cursor */
+
+    margin: 2px;
+}
+
+button.btn:hover {
+    background-color: var(--03);
+}
+
+button.btn_green:hover {
+    background-color: var(--03);
+}
+
+button.btn_red:hover {
+    background-color: var(--03);
+}
+
+/* RESULT */
+p#result {
+    position: relative;
+
+    background-color: var(--03);
+    width: 214px;
+    height: 30px;
+
+    top: 5px;
+    left: 13px;
+
+    margin-top: 10px;
+    padding: 5px;
+
+    text-align: right;
+    font-size: 30px;
+    color: var(--01);
+}
